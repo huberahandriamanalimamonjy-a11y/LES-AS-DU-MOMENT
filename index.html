@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>LES AS DU MOMENT | Football</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #090909;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 22px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #302510;
+      background: #101010;
+    }
+
+    .logo {
+      color: #d9ae52;
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: #e3b957; }
+
+    .hero {
+      min-height: 390px;
+      padding: 85px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background:
+        linear-gradient(90deg, #090909 10%, #090909d9 55%, #09090955),
+        url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1600");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .tag {
+      color: #e0b75d;
+      letter-spacing: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 70px);
+      max-width: 650px;
+      margin: 18px 0;
+      line-height: 1.05;
+    }
+
+    h1 span { color: #dfb451; }
+
+    .hero p {
+      color: #ccc;
+      max-width: 480px;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      width: fit-content;
+      margin-top: 25px;
+      background: #d6aa4c;
+      color: #111;
+      padding: 14px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    main { padding: 45px 7%; }
+
+    .section-title {
+      font-size: 25px;
+      margin-bottom: 25px;
+      border-left: 4px solid #d6aa4c;
+      padding-left: 13px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151515;
+      border: 1px solid #302510;
+      border-radius: 9px;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #d6aa4c;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-content { padding: 18px; }
+
+    .card-content small { color: #d6aa4c; }
+
+    .card-content h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .card-content p {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .scores {
+      margin-top: 45px;
+      background: #151515;
+      border: 1px solid #302510;
+      border-radius: 9px;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .scores p { color: #aaa; margin-top: 12px; }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      color: #888;
+      border-top: 1px solid #302510;
+      font-size: 13px;
+    }
+
+    footer span { color: #d6aa4c; }
+
+    @media(max-width: 600px) {
+      header { flex-direction: column; gap: 17px; }
+      nav a { margin: 0 7px; font-size: 12px; }
+      .hero { min-height: 350px; padding: 55px 7%; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">LES AS DU MOMENT</div>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#actualites">Actualités</a>
+      <a href="#scores">Scores</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="tag">LE FOOTBALL À L'ÉTAT PUR</div>
+    <h1>LA PASSION DU FOOTBALL <span>EN UN SEUL LIEU.</span></h1>
+    <p>Actualités, stars, grandes compétitions et moments inoubliables. Toute l'actualité du ballon rond.</p>
+    <a href="#actualites" class="button">DÉCOUVRIR L'ACTUALITÉ</a>
+  </section>
+
+  <main>
+    <section id="actualites">
+      <h2 class="section-title">À LA UNE</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=700" alt="Stade de football">
+          <div class="card-content">
+            <small>FOOTBALL MONDIAL</small>
+            <h3>Le spectacle continue</h3>
+            <p>Retrouvez les grands moments du football et les dernières informations.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?w=700" alt="Match de football">
+          <div class="card-content">
+            <small>COMPÉTITIONS</small>
+            <h3>Les grands rendez-vous</h3>
+            <p>Suivez les clubs et les compétitions qui font vibrer les supporters.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=700" alt="Terrain de football">
+          <div class="card-content">
+            <small>STARS DU BALLON ROND</small>
+            <h3>Les joueurs à suivre</h3>
+            <p>Découvrez les talents et les stars du football international.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="scores" class="scores">
+      <h2 class="section-title">ESPACE SCORES</h2>
+      <p>Les résultats et les calendriers des matchs arriveront dans une prochaine mise à jour.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 <span>LES AS DU MOMENT</span> — Tous droits réservés.
+  </footer>
+</body>
+</html>
